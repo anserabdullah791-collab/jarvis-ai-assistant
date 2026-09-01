@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "============================================"
-echo "     J.A.R.V.I.S v3.0 - AI ASSISTANT"
-echo "     Voice + Desktop Control + Auto-Listen"
+echo "     J.A.R.V.I.S v4.0 - AI ASSISTANT"
+echo "     60+ Skills: Code+GitHub+Claude+Desktop"
 echo "============================================"
 echo ""
 if ! command -v python3 &> /dev/null; then
@@ -20,10 +20,8 @@ if [ ! -f "jarvis.py" ]; then
 fi
 echo ""
 echo "============================================"
-echo "  JARVIS v3.0 is ONLINE, sir!"
-echo "  Voice: macOS native (say command)"
+echo "  JARVIS v4.0 is ONLINE, sir!"
 echo "  Say 'JARVIS' then your command"
-echo "  Auto-listening is ON by default"
 echo "============================================"
 echo ""
 python3 jarvis.py
