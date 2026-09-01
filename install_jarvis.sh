@@ -1,13 +1,13 @@
 #!/bin/bash
 echo ""
 echo "============================================"
-echo "     J.A.R.V.I.S v3.0 - AI ASSISTANT"
-echo "     Voice + Desktop Control + Auto-Listen"
+echo "     J.A.R.V.I.S v4.0 - AI ASSISTANT"
+echo "     Code + GitHub + Claude + Desktop"
 echo "============================================"
 echo ""
 echo "[1/4] Checking Python3..."
 if ! command -v python3 &> /dev/null; then
-    echo "  Python3 not found. Installing via Homebrew..."
+    echo "  Python3 not found. Installing..."
     if ! command -v brew &> /dev/null; then
         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     fi
@@ -19,7 +19,7 @@ echo "[2/4] Installing dependencies..."
 pip3 install flask requests -q 2>/dev/null || pip3 install --user flask requests -q 2>/dev/null
 echo "  Done."
 echo ""
-echo "[3/4] Downloading JARVIS v3.0..."
+echo "[3/4] Downloading JARVIS v4.0..."
 JARVIS_DIR="$HOME/Desktop/JARVIS"
 if [ -d "$JARVIS_DIR" ]; then
     cd "$JARVIS_DIR" && git pull -q 2>/dev/null
@@ -34,10 +34,10 @@ echo ""
 echo "[4/4] Starting JARVIS..."
 echo ""
 echo "============================================"
-echo "  JARVIS v3.0 is ONLINE, sir!"
+echo "  JARVIS v4.0 is ONLINE, sir!"
+echo "  60+ skills: Code, GitHub, Claude, Desktop"
 echo "  Voice: macOS native (say command)"
 echo "  Say 'JARVIS' then your command"
-echo "  Auto-listening is ON"
 echo "============================================"
 echo ""
 cd "$JARVIS_DIR"
